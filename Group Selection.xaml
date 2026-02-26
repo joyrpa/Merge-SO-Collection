@@ -33,6 +33,7 @@
       <x:String>System.Reflection</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -86,6 +87,8 @@
       <AssemblyReference>System.CodeDom</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Group_Selection" sap:VirtualizedContainerService.HintSize="972,2964" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -464,7 +467,7 @@
         </Sequence>
       </ui:IfElseIfV2.Then>
     </ui:IfElseIfV2>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="972,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;localdbip &quot; +LocalDB_IP+vbcr+&quot;&#xA;localdbport &quot; +LocalDBPort+vbcr+&quot;&#xA;duplicateport &quot; +DuplicateIP+vbcr+&quot;&#xA;Url &quot; +Url+vbcr+&quot;&#xA;productline &quot; +Product_Line+vbcr+&quot;&#xA;so &quot; +SO+vbcr+&quot;&#xA;co &quot; +CO+vbcr+&quot;&#xA;groupflag &quot; +GroupFlag+vbcr+&quot;&#xA;serverno &quot; +Server_No+vbcr+&quot;&#xA;pcname &quot; +PC_HostName+vbcr]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="972,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;local_db_ip: &quot; +LocalDB_IP+&quot; || port: &quot; +LocalDBPort+&quot; || duplicateport &quot; +DuplicateIP+vbcr+&quot;&#xD;&#xA;Url &quot; +Url+vbcr+&quot;&#xD;&#xA;PL &quot; +Product_Line+&quot; || SO: &quot; +SO+&quot; || CO: &quot; +CO+vbcr+&#xD;&#xA;&quot;PC : &quot; +PC_HostName+&quot; || Serverno : &quot; +Server_No+vbcr+&#xD;&#xA;&quot;Groupflag &quot; +GroupFlag+vbCr+&#xD;&#xA;&quot;Total Loop - &quot;+TotalLoop.ToString.Trim]" />
     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="972,48" sap2010:WorkflowViewState.IdRef="CommentOut_4">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,108" sap2010:WorkflowViewState.IdRef="Sequence_12">
