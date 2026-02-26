@@ -1,0 +1,10 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+  "entryPoints": [
+    {
+      "filePath": "Merge SO & Collection.xaml",
+      "uniqueId": "39ab871b-e699-4ca5-bce7-089ff55634ac",
+      "type": "process"
+    }
+  ]
+}

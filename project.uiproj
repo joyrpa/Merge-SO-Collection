@@ -1,0 +1,6 @@
+{
+  "Name": "SO Collection Merge Process Version 1.12",
+  "ProjectType": "Process",
+  "Description": "SO Collection merge, report handle, all server proper utilize, date range handle, activitiy update, ALL Report Dir Revise, auto log out handle, collection save button handle, in mail server,transaction, discount for all line, carate for all line, Discount issue faced and solved,API Try Catch,Customer code isssue. U Line Added. Local DB Modified, Any unknown Line Handle, API Check Handle, text file added to store last transaction in local, StopFlag added, duplicate posting handled, Fit For Cement",
+  "MainFile": "Merge SO & Collection.xaml"
+}
