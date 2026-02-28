@@ -97,7 +97,7 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SO_Transaction_DT" sap:VirtualizedContainerService.HintSize="702,6489" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SO_Transaction_DT" sap:VirtualizedContainerService.HintSize="936,6026" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Double" Name="Discount_Value" />
     </Sequence.Variables>
@@ -106,7 +106,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="626,6466" sap2010:WorkflowViewState.IdRef="Sequence_12">
+    <Sequence sap:VirtualizedContainerService.HintSize="626,6003" sap2010:WorkflowViewState.IdRef="Sequence_12">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Int32" Name="Row_Counter" />
         <Variable x:TypeArguments="x:String" Name="Item_Category" />
@@ -116,34 +116,6 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <If Condition="[GlobalVariablesNamespace.GlobalVariables.GroupFlag.ToString.tolower.Trim=&quot;cement&quot;]" sap:VirtualizedContainerService.HintSize="592,455" sap2010:WorkflowViewState.IdRef="If_7">
-        <If.Then>
-          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_19">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_5">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[Item_Category]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[in_Transaction_DT.Rows(0)("Item_Category").ToString]</InArgument>
-              </Assign.Value>
-            </Assign>
-          </Sequence>
-        </If.Then>
-        <If.Else>
-          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_20">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </Sequence>
-        </If.Else>
-      </If>
       <Assign sap:VirtualizedContainerService.HintSize="592,175" sap2010:WorkflowViewState.IdRef="Assign_4">
         <Assign.To>
           <OutArgument x:TypeArguments="x:Int32">[Row_Counter]</OutArgument>
@@ -152,13 +124,13 @@
           <InArgument x:TypeArguments="x:Int32">0</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[in_Transaction_DT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="592,5753" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[in_Transaction_DT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="592,5745" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
         <ui:ForEachRow.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="DataRow" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="590,5580" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="590,5572" sap2010:WorkflowViewState.IdRef="Sequence_11">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Int32" Name="Empty_Row_Count" />
               </Sequence.Variables>
@@ -168,13 +140,13 @@
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:CellScope UiElement="{x:Null}" ColumnName="Material" DisplayName="Table Cell Scope 'TableControl  All Items'" sap:VirtualizedContainerService.HintSize="556,4011" sap2010:WorkflowViewState.IdRef="CellScope_1" RowNumber="First Empty Row" TableRow="[Empty_Row_Count]">
+              <ui:CellScope UiElement="{x:Null}" ColumnName="Material" DisplayName="Table Cell Scope 'TableControl  All Items'" sap:VirtualizedContainerService.HintSize="556,4022" sap2010:WorkflowViewState.IdRef="CellScope_1" RowNumber="First Empty Row" TableRow="[Empty_Row_Count]">
                 <ui:CellScope.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="522,3649" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="522,3700" sap2010:WorkflowViewState.IdRef="Sequence_7">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="Get_MAterial" />
                         <Variable x:TypeArguments="x:String" Name="Get_Qty" />
@@ -185,6 +157,40 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
+                      <If Condition="[GlobalVariablesNamespace.GlobalVariables.GroupFlag.ToString.tolower.Trim=&quot;cement&quot;]" sap:VirtualizedContainerService.HintSize="488,57" sap2010:WorkflowViewState.IdRef="If_7">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_5">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[Item_Category]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[in_Transaction_DT.Rows(0)("Item_Category").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
                       <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into Material Code" EmptyField="True" sap:VirtualizedContainerService.HintSize="488,167" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[DataRow(&quot;Material_Code&quot;).ToString+ &quot;[k(tab)]&quot;]">
                         <ui:TypeInto.Target>
                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b2033061-1955-4484-82d0-e95570b4efd5" InformativeScreenshot="f616ea992d50a3bfdb325dfe59890789" Selector="[string.Format(&quot;&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create*' /&gt;&lt;sap colTooltip='Material' id='usr/tabsTAXI_TABSTRIP_OVERVIEW/tabpT\01/ssubSUBSCREEN_BODY:SAPMV45A:4400/subSUBSCREEN_TC:SAPMV45A:4900/tblSAPMV45ATCTRL_U_ERF_AUFTRAG' tableRow='{0}' tableCol='1' /&gt;&quot;, Empty_Row_Count)]">
@@ -402,15 +408,15 @@
                           <InArgument x:TypeArguments="x:Int32" x:Key="Empty_Row_Count">[Empty_Row_Count]</InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
-                      <If Condition="[GlobalVariablesNamespace.GlobalVariables.GroupFlag.ToString.Trim.ToUpper=&quot;CEMENT&quot;]" sap:VirtualizedContainerService.HintSize="488,734" sap2010:WorkflowViewState.IdRef="If_5">
+                      <If Condition="[GlobalVariablesNamespace.GlobalVariables.GroupFlag.ToString.Trim.ToUpper=&quot;CEMENT&quot;]" sap:VirtualizedContainerService.HintSize="488,728" sap2010:WorkflowViewState.IdRef="If_5">
                         <If.Then>
-                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,509" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,508" sap2010:WorkflowViewState.IdRef="Sequence_15">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <If Condition="[InIncoterm.Trim.ToLower=&quot;cfr&quot; And Item_Category.ToString.Trim.ToLower=&quot;ZTAN&quot;]" sap:VirtualizedContainerService.HintSize="452,449" sap2010:WorkflowViewState.IdRef="If_6">
+                            <If Condition="[InIncoterm.Trim.ToUpper.Contains(&quot;CFR&quot;) And Item_Category.ToString.Trim.ToUpper.Contains(&quot;ZTAN&quot;)]" sap:VirtualizedContainerService.HintSize="452,448" sap2010:WorkflowViewState.IdRef="If_6">
                               <If.Then>
                                 <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,228" sap2010:WorkflowViewState.IdRef="Sequence_17">
                                   <sap:WorkflowViewStateService.ViewState>
@@ -426,7 +432,7 @@
                                 </Sequence>
                               </If.Then>
                               <If.Else>
-                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_18">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -438,7 +444,7 @@
                           </Sequence>
                         </If.Then>
                         <If.Else>
-                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,94.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,90" sap2010:WorkflowViewState.IdRef="Sequence_16">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -501,7 +507,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:CellScope>
               <Delay DisplayName=" Delay 1 second" Duration="00:00:00.5000000" sap:VirtualizedContainerService.HintSize="556,123" sap2010:WorkflowViewState.IdRef="Delay_1" />
-              <If Condition="[in_Carate_Material.Contains(DataRow(&quot;Material_Code&quot;).ToString.Trim)]" sap:VirtualizedContainerService.HintSize="556,1215.3333333333333" sap2010:WorkflowViewState.IdRef="If_3">
+              <If Condition="[in_Carate_Material.Contains(DataRow(&quot;Material_Code&quot;).ToString.Trim)]" sap:VirtualizedContainerService.HintSize="556,1201" sap2010:WorkflowViewState.IdRef="If_3">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -509,13 +515,13 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <If.Then>
-                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="518,976.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="518,967" sap2010:WorkflowViewState.IdRef="Sequence_9">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Assign sap:VirtualizedContainerService.HintSize="484,180.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign sap:VirtualizedContainerService.HintSize="484,175" sap2010:WorkflowViewState.IdRef="Assign_2">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Int32">[Row_Counter]</OutArgument>
                       </Assign.To>
@@ -624,7 +630,7 @@
                   </Sequence>
                 </If.Else>
               </If>
-              <Assign sap:VirtualizedContainerService.HintSize="556,171.33333333333334" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign sap:VirtualizedContainerService.HintSize="556,166" sap2010:WorkflowViewState.IdRef="Assign_3">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Int32">[Row_Counter]</OutArgument>
                 </Assign.To>
