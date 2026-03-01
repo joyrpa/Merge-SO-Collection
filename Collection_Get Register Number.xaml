@@ -150,7 +150,7 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Get_Register_Number" sap:VirtualizedContainerService.HintSize="593.3333333333333,6392" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Get_Register_Number" sap:VirtualizedContainerService.HintSize="694,6180" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Status_Check" />
       <Variable x:TypeArguments="x:String" Name="Collection_Number_Status" />
@@ -165,9 +165,6 @@
       <Variable x:TypeArguments="x:String" Name="Post_Api_Report_Dir" />
       <Variable x:TypeArguments="x:Int32" Name="POST_API_Response_Status" />
       <Variable x:TypeArguments="x:String" Name="postapi_dir" />
-      <Variable x:TypeArguments="x:String" Name="User_Email" />
-      <Variable x:TypeArguments="x:String" Name="From_Email" />
-      <Variable x:TypeArguments="x:String" Default="qjeoovzcqnfyrlkg" Name="Email_Pas" />
       <Variable x:TypeArguments="x:String" Name="successReportFileName" />
       <Variable x:TypeArguments="x:String" Name="failedReportFileName" />
       <Variable x:TypeArguments="x:String" Name="postReportFileName" />
@@ -183,7 +180,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="530,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_15">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="530,57" sap2010:WorkflowViewState.IdRef="CommentOut_15">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512.6666666666666,956" sap2010:WorkflowViewState.IdRef="Sequence_39">
           <sap:WorkflowViewStateService.ViewState>
@@ -275,15 +272,15 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <If Condition="[String.IsNullOrEmpty(In_PopUp_Msg.ToString.Trim)]" sap:VirtualizedContainerService.HintSize="530,880.6666666666666" sap2010:WorkflowViewState.IdRef="If_2">
+    <If Condition="[String.IsNullOrEmpty(In_PopUp_Msg.ToString.Trim)]" sap:VirtualizedContainerService.HintSize="530,856" sap2010:WorkflowViewState.IdRef="If_2">
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,505.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_16">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,491" sap2010:WorkflowViewState.IdRef="Sequence_16">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'Statusbar Status'" sap:VirtualizedContainerService.HintSize="416,143.33333333333334" sap2010:WorkflowViewState.IdRef="GetValue_1">
+          <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'Statusbar Status'" sap:VirtualizedContainerService.HintSize="416,139" sap2010:WorkflowViewState.IdRef="GetValue_1">
             <ui:GetValue.Target>
               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0770155a-c17a-4789-a9bb-f8d8f3f22675" InformativeScreenshot="747c37e0b0bd9d4f824057bd5d3ff4fe" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Customer Collection - Create Document' /&gt;&lt;sap id='sbar' type='GuiStatusbar' /&gt;" WaitForReady="COMPLETE">
                 <ui:Target.TimeoutMS>
@@ -295,7 +292,7 @@
               <OutArgument x:TypeArguments="x:String">[Status_Check]</OutArgument>
             </ui:GetValue.Value>
           </ui:GetValue>
-          <ucas:ReadStatusbar ContinueOnError="{x:Null}" MessageData="{x:Null}" MessageId="{x:Null}" MessageNumber="{x:Null}" MessageType="{x:Null}" DisplayName="Read Status Bar 'Statusbar Status'" sap:VirtualizedContainerService.HintSize="416,298" sap2010:WorkflowViewState.IdRef="ReadStatusbar_1" MessageText="[Collection_Number_Status]">
+          <ucas:ReadStatusbar ContinueOnError="{x:Null}" MessageData="{x:Null}" MessageId="{x:Null}" MessageNumber="{x:Null}" MessageType="{x:Null}" DisplayName="Read Status Bar 'Statusbar Status'" sap:VirtualizedContainerService.HintSize="416,292" sap2010:WorkflowViewState.IdRef="ReadStatusbar_1" MessageText="[Collection_Number_Status]">
             <ucas:ReadStatusbar.Target>
               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f904b9d1-a6a8-4d8e-8b49-a676467fa03f" InformativeScreenshot="747c37e0b0bd9d4f824057bd5d3ff4fe" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Customer Collection - Create Document' /&gt;&lt;sap id='sbar' type='GuiStatusbar' /&gt;">
                 <ui:Target.TimeoutMS>
@@ -310,13 +307,13 @@
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,235.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_17">
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_17">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="416,171.33333333333334" sap2010:WorkflowViewState.IdRef="Assign_3">
+          <Assign sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_3">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[Collection_Number_Status]</OutArgument>
             </Assign.To>
@@ -327,8 +324,8 @@
         </Sequence>
       </If.Else>
     </If>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="530,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Collection Number Status : &quot;+ Collection_Number_Status]" />
-    <Assign sap:VirtualizedContainerService.HintSize="530,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_10">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="530,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Collection Number Status : &quot;+ Collection_Number_Status]" />
+    <Assign sap:VirtualizedContainerService.HintSize="530,175" sap2010:WorkflowViewState.IdRef="Assign_10">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[Transaction_Status]</OutArgument>
       </Assign.To>
@@ -336,16 +333,16 @@
         <InArgument x:TypeArguments="x:String">["Null"]</InArgument>
       </Assign.Value>
     </Assign>
-    <If Condition="[Collection_Number_Status.ToString.Trim.Contains(&quot;Created Successfully&quot;)]" sap:VirtualizedContainerService.HintSize="530,5078" sap2010:WorkflowViewState.IdRef="If_1">
+    <If Condition="[Collection_Number_Status.ToString.Trim.Contains(&quot;Created Successfully&quot;)]" sap:VirtualizedContainerService.HintSize="530,4894" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="528,1827.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="528,1754" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="494,180.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_1">
+          <Assign sap:VirtualizedContainerService.HintSize="494,175" sap2010:WorkflowViewState.IdRef="Assign_1">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[Collection_No]</OutArgument>
             </Assign.To>
@@ -353,9 +350,9 @@
               <InArgument x:TypeArguments="x:String">[Collection_Number_Status.ToString.Split({"Created Successfully"},StringSplitOptions. None)(0).ToString.Trim]</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="494,180.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Pay ID : &quot; +Out_Pay_ID+&quot; Sucessfull , ------&gt; &quot;+&quot;Collection No : &quot;+ Collection_No.ToString. Trim]" />
-          <Delay DisplayName=" Delay 1 second" Duration="00:00:01" sap:VirtualizedContainerService.HintSize="494,128" sap2010:WorkflowViewState.IdRef="Delay_1" />
-          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="494,61.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_17">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="494,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Pay ID : &quot; +Out_Pay_ID+&quot; Sucessfull , ------&gt; &quot;+&quot;Collection No : &quot;+ Collection_No.ToString. Trim]" />
+          <Delay DisplayName=" Delay 1 second" Duration="00:00:01" sap:VirtualizedContainerService.HintSize="494,123" sap2010:WorkflowViewState.IdRef="Delay_1" />
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="494,57" sap2010:WorkflowViewState.IdRef="CommentOut_17">
             <ui:CommentOut.Body>
               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,449" sap2010:WorkflowViewState.IdRef="Sequence_40">
                 <sap:WorkflowViewStateService.ViewState>
@@ -385,7 +382,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:CommentOut>
-          <Assign sap:VirtualizedContainerService.HintSize="494,180.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_11">
+          <Assign sap:VirtualizedContainerService.HintSize="494,175" sap2010:WorkflowViewState.IdRef="Assign_11">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[Transaction_Status]</OutArgument>
             </Assign.To>
@@ -393,8 +390,8 @@
               <InArgument x:TypeArguments="x:String">["Success"]</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="494,180.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Trace" Message="[&quot;Successfull Transaction - POST API Strated&quot;]" />
-          <ui:MultipleAssign DisplayName="Cloud DateTime" sap:VirtualizedContainerService.HintSize="494,184" sap2010:WorkflowViewState.IdRef="MultipleAssign_7">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="494,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Trace" Message="[&quot;Successfull Transaction - POST API Strated&quot;]" />
+          <ui:MultipleAssign DisplayName="Cloud DateTime" sap:VirtualizedContainerService.HintSize="494,180" sap2010:WorkflowViewState.IdRef="MultipleAssign_7">
             <ui:MultipleAssign.AssignOperations>
               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_11">
@@ -416,7 +413,7 @@
               </scg:List>
             </ui:MultipleAssign.AssignOperations>
           </ui:MultipleAssign>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="POST API.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="494,186.66666666666666" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_22" UnSafe="False" WorkflowFileName="Collection_POST API.xaml">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="POST API.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="494,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_22" UnSafe="False" WorkflowFileName="Collection_POST API.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <InArgument x:TypeArguments="x:String" x:Key="In_ref_number">[Collection_No.ToString.Trim]</InArgument>
               <InArgument x:TypeArguments="x:String" x:Key="In_pay_id">[Out_Pay_ID]</InArgument>
@@ -424,7 +421,7 @@
               <OutArgument x:TypeArguments="x:String" x:Key="Response_Content">[Out_Rspns_Msg]</OutArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Collection_POST API_Local - Invoke Workflow File (Collection_POST API_Local.xaml)" sap:VirtualizedContainerService.HintSize="494,186.66666666666666" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_20" UnSafe="False" WorkflowFileName="Collection_POST API_Local.xaml">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Collection_POST API_Local - Invoke Workflow File (Collection_POST API_Local.xaml)" sap:VirtualizedContainerService.HintSize="494,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_20" UnSafe="False" WorkflowFileName="Collection_POST API_Local.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <InArgument x:TypeArguments="x:String" x:Key="InCloudPostingTime">[CloudPostingTime]</InArgument>
               <InArgument x:TypeArguments="x:String" x:Key="InCloudPostingDate">[CloudPostingDate]</InArgument>
@@ -436,8 +433,8 @@
               <InArgument x:TypeArguments="x:String" x:Key="In_Pay_Id">[Out_Pay_ID]</InArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="494,180.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Trace" Message="[&quot;Successfull Transaction - POST API finished&quot;]" />
-          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="494,61.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_21">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="494,175" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Trace" Message="[&quot;Successfull Transaction - POST API finished&quot;]" />
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="494,57" sap2010:WorkflowViewState.IdRef="CommentOut_21">
             <ui:CommentOut.Body>
               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_44">
                 <sap:WorkflowViewStateService.ViewState>
@@ -455,7 +452,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:CommentOut>
-          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="494,52" sap2010:WorkflowViewState.IdRef="CommentOut_18">
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="494,48" sap2010:WorkflowViewState.IdRef="CommentOut_18">
             <ui:CommentOut.Body>
               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,228" sap2010:WorkflowViewState.IdRef="Sequence_41">
                 <sap:WorkflowViewStateService.ViewState>
@@ -487,14 +484,14 @@
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="528,3120" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="528,3010" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="494,180.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_12">
+          <Assign sap:VirtualizedContainerService.HintSize="494,175" sap2010:WorkflowViewState.IdRef="Assign_12">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[Transaction_Status]</OutArgument>
             </Assign.To>
@@ -502,7 +499,7 @@
               <InArgument x:TypeArguments="x:String">["Failed"]</InArgument>
             </Assign.Value>
           </Assign>
-          <Assign sap:VirtualizedContainerService.HintSize="494,180.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_2">
+          <Assign sap:VirtualizedContainerService.HintSize="494,175" sap2010:WorkflowViewState.IdRef="Assign_2">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[Collection_No]</OutArgument>
             </Assign.To>
@@ -510,7 +507,7 @@
               <InArgument x:TypeArguments="x:String">[Collection_Number_Status]</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="494,61.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_23">
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="494,57" sap2010:WorkflowViewState.IdRef="CommentOut_23">
             <ui:CommentOut.Body>
               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_46">
                 <sap:WorkflowViewStateService.ViewState>
@@ -528,16 +525,16 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:CommentOut>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="494,180.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;Pay Id : &quot;+Out_Pay_ID+&quot; , Error Occured - Next Trasaction Starting&quot;]" />
-          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="494,349.3333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_19">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="494,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;Pay Id : &quot;+Out_Pay_ID+&quot; , Error Occured - Next Trasaction Starting&quot;]" />
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="494,339" sap2010:WorkflowViewState.IdRef="CommentOut_19">
             <ui:CommentOut.Body>
-              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,233.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_42">
+              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,228" sap2010:WorkflowViewState.IdRef="Sequence_42">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Failed Report Writing" sap:VirtualizedContainerService.HintSize="416,173.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="Collection_Report Writing.xaml">
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Failed Report Writing" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="Collection_Report Writing.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="x:String" x:Key="in_Success_Report_Dir" />
                     <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_Success_Failed_Report">[dt_Success_Failed_Report]</InArgument>
@@ -552,8 +549,8 @@
               </Sequence>
             </ui:CommentOut.Body>
           </ui:CommentOut>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="494,180.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Trace" Message="[&quot;Failed Transaction - POST API Started&quot;]" />
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="POST API.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="494,186.66666666666666" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="Collection_POST API.xaml">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="494,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Trace" Message="[&quot;Failed Transaction - POST API Started&quot;]" />
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="POST API.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="494,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="Collection_POST API.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <InArgument x:TypeArguments="x:String" x:Key="In_ref_number">[Collection_Number_Status]</InArgument>
               <InArgument x:TypeArguments="x:String" x:Key="In_pay_id">[Out_Pay_ID]</InArgument>
@@ -561,8 +558,8 @@
               <OutArgument x:TypeArguments="x:String" x:Key="Response_Content">[Out_Rspns_Msg]</OutArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="494,180.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Trace" Message="[&quot;Failed Transaction - POST API finished&quot;]" />
-          <ui:MultipleAssign DisplayName="Cloud DateTime" sap:VirtualizedContainerService.HintSize="494,184" sap2010:WorkflowViewState.IdRef="MultipleAssign_8">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="494,175" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Trace" Message="[&quot;Failed Transaction - POST API finished&quot;]" />
+          <ui:MultipleAssign DisplayName="Cloud DateTime" sap:VirtualizedContainerService.HintSize="494,180" sap2010:WorkflowViewState.IdRef="MultipleAssign_8">
             <ui:MultipleAssign.AssignOperations>
               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_13">
@@ -584,7 +581,7 @@
               </scg:List>
             </ui:MultipleAssign.AssignOperations>
           </ui:MultipleAssign>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Collection_POST API_Local - Invoke Workflow File (Collection_POST API_Local.xaml)" sap:VirtualizedContainerService.HintSize="494,186.66666666666666" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_21" UnSafe="False" WorkflowFileName="Collection_POST API_Local.xaml">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Collection_POST API_Local - Invoke Workflow File (Collection_POST API_Local.xaml)" sap:VirtualizedContainerService.HintSize="494,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_21" UnSafe="False" WorkflowFileName="Collection_POST API_Local.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <InArgument x:TypeArguments="x:String" x:Key="InCloudPostingTime">[CloudPostingTime]</InArgument>
               <InArgument x:TypeArguments="x:String" x:Key="InCloudPostingDate">[CloudPostingDate]</InArgument>
@@ -596,18 +593,18 @@
               <InArgument x:TypeArguments="x:String" x:Key="In_Pay_Id">[Out_Pay_ID]</InArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
-          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="494,1007.3333333333334" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="494,977" sap2010:WorkflowViewState.IdRef="TryCatch_1">
             <TryCatch.Try>
-              <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="492,412" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3" RetryInterval="00:00:03">
+              <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="492,408" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3" RetryInterval="00:00:03">
                 <ui:RetryScope.ActivityBody>
                   <ActivityAction>
-                    <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,233.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                    <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,231" sap2010:WorkflowViewState.IdRef="Sequence_20">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Hi All,&quot;+vbCr+&quot;This is BOT generated mail, if any query please contact concern person&quot;+vbCr+vbCr+&quot;Error : &quot;+Collection_Number_Status+vbCr+vbCr+&quot;Check below details for your referene - &quot;+vbCr+&quot;receiving_company_code : &quot;+Receving_Company_Code+vbCr+&quot;customer_code : &quot;+Customer_Code+vbCr+&quot;house_bank_key : &quot;+House_Bank_Key_in+vbCr+&quot;routing_code : &quot;+Routing_Code+vbCr+&quot;Product_Line : &quot;+Line_Number_In+vbCr+&quot;instrument_issue_date : &quot;+Instrument_Issue_Date+vbCr+&quot;instrument_recpt_date : &quot;+Instrument_Receipt_Date+vbCr+vbCr+vbCr+vbCr+&quot;Thank You&quot;]" DisplayName="Send SMTP Mail Message" Email="[From_Email]" EnableSSL="True" From="[From_Email]" sap:VirtualizedContainerService.HintSize="416,173.33333333333334" sap2010:WorkflowViewState.IdRef="SendMail_2" IgnoreCRL="False" IsBodyHtml="False" Name="RPA BOT" Password="[Email_Pas]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[&quot;Register Entry Failed -&quot; +&quot;Bank ( &quot;+House_Bank_Key_in+&quot; )&quot; + &quot;   [ REF : &quot;+Out_Pay_ID+&quot; ]&quot;+&quot;   [ &quot;+System.DateTime.Now.ToString(&quot;dd MMM, yyyy&quot;)+&quot; ]&quot;]" To="[User_Email]">
+                      <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Hi All,&quot;+vbCr+&quot;This is BOT generated mail, if any query please contact concern person&quot;+vbCr+vbCr+&quot;Error : &quot;+Collection_Number_Status+vbCr+vbCr+&quot;Check below details for your referene - &quot;+vbCr+&quot;receiving_company_code : &quot;+Receving_Company_Code+vbCr+&quot;customer_code : &quot;+Customer_Code+vbCr+&quot;house_bank_key : &quot;+House_Bank_Key_in+vbCr+&quot;routing_code : &quot;+Routing_Code+vbCr+&quot;Product_Line : &quot;+Line_Number_In+vbCr+&quot;instrument_issue_date : &quot;+Instrument_Issue_Date+vbCr+&quot;instrument_recpt_date : &quot;+Instrument_Receipt_Date+vbCr+vbCr+vbCr+vbCr+&quot;Thank You&quot;]" DisplayName="Send SMTP Mail Message" Email="[From_Email]" EnableSSL="True" From="[From_Email]" sap:VirtualizedContainerService.HintSize="416,171" sap2010:WorkflowViewState.IdRef="SendMail_2" IgnoreCRL="False" IsBodyHtml="False" Name="RPA BOT" Password="[Email_Pas]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[&quot;Register Entry Failed -&quot; +&quot;Bank ( &quot;+House_Bank_Key_in+&quot; )&quot; + &quot;   [ REF : &quot;+Out_Pay_ID+&quot; ]&quot;+&quot;   [ &quot;+System.DateTime.Now.ToString(&quot;dd MMM, yyyy&quot;)+&quot; ]&quot;]" To="[CO_Mail]">
                         <ui:SendMail.Files>
                           <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                         </ui:SendMail.Files>
@@ -644,14 +641,14 @@
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="492,296.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="492,283" sap2010:WorkflowViewState.IdRef="Sequence_21">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="458,180.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Trace" Message="[&quot;Message Sending Failed&quot;]" />
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="458,52" sap2010:WorkflowViewState.IdRef="CommentOut_24">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="458,175" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Trace" Message="[&quot;Message Sending Failed&quot;]" />
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="458,48" sap2010:WorkflowViewState.IdRef="CommentOut_24">
                       <ui:CommentOut.Body>
                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,219.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_47">
                           <sap:WorkflowViewStateService.ViewState>
@@ -674,7 +671,7 @@
               </Catch>
             </TryCatch.Catches>
             <TryCatch.Finally>
-              <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="492,94.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_22">
+              <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="492,90" sap2010:WorkflowViewState.IdRef="Sequence_22">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -683,7 +680,7 @@
               </Sequence>
             </TryCatch.Finally>
           </TryCatch>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Back To First Page.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="494,177.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Collection _Back To First Page.xaml">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Back To First Page.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="494,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Collection _Back To First Page.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <InArgument x:TypeArguments="x:String" x:Key="Receving_Company_Code">[Receving_Company_Code]</InArgument>
               <InArgument x:TypeArguments="x:Boolean" x:Key="POP_Status">[POP_STATUS_INOUT]</InArgument>

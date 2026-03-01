@@ -118,7 +118,7 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Get_API_LocalDB_Store" sap:VirtualizedContainerService.HintSize="805,3040" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Get_API_LocalDB_Store" sap:VirtualizedContainerService.HintSize="694,3897" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="CO_Store_status" />
       <Variable x:TypeArguments="x:String" Name="co_Store_Rspns" />
@@ -130,7 +130,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="494,149" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="564,149" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -144,7 +144,7 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="494,1213" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="564,1133" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -152,7 +152,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="492,701" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="20" RetryInterval="00:00:10">
+        <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="492,621" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="20" RetryInterval="00:00:10">
           <ui:RetryScope.ActivityBody>
             <ActivityAction>
               <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,329" sap2010:WorkflowViewState.IdRef="Sequence_2">
@@ -216,7 +216,7 @@
         </Sequence>
       </TryCatch.Finally>
     </TryCatch>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="494,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="564,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,143" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <sap:WorkflowViewStateService.ViewState>
@@ -234,7 +234,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <If Condition="[CO_Store_status= 200 And (Not String.IsNullOrEmpty(co_Store_Rspns.ToString))=True]" sap:VirtualizedContainerService.HintSize="494,1099" sap2010:WorkflowViewState.IdRef="If_1">
+    <If Condition="[CO_Store_status= 200 And (Not String.IsNullOrEmpty(co_Store_Rspns.ToString))=True]" sap:VirtualizedContainerService.HintSize="564,1099" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,734" sap2010:WorkflowViewState.IdRef="Sequence_6">
           <Sequence.Variables>
@@ -295,15 +295,15 @@
         </Sequence>
       </If.Else>
     </If>
-    <If Condition="[StopFlag=&quot;True&quot;]" sap:VirtualizedContainerService.HintSize="494,499" sap2010:WorkflowViewState.IdRef="If_3">
+    <If Condition="[StopFlag=&quot;True&quot;]" sap:VirtualizedContainerService.HintSize="564,1436" sap2010:WorkflowViewState.IdRef="If_3">
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,279" sap2010:WorkflowViewState.IdRef="Sequence_14">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="562,1216" sap2010:WorkflowViewState.IdRef="Sequence_14">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Collection: &quot;+CO_Store_status.ToString]">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="528,57" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Collection: &quot;+CO_Store_status.ToString]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -311,7 +311,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Bot Stop Notification - Invoke Workflow File (Bot Stop Notification.xaml)" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Bot Stop Notification.xaml">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Bot Stop Notification - Invoke Workflow File (Bot Stop Notification.xaml)" sap:VirtualizedContainerService.HintSize="528,57" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Bot Stop Notification.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <InArgument x:TypeArguments="x:String" x:Key="InServerNo">[GlobalVariablesNamespace.GlobalVariables.Server_No]</InArgument>
               <InArgument x:TypeArguments="x:String" x:Key="InMessageBody">Bot Stopped due to Collection data insert issue!</InArgument>
@@ -323,21 +323,21 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:InvokeWorkflowFile>
-          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="528,994" sap2010:WorkflowViewState.IdRef="TryCatch_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <TryCatch.Try>
-              <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="526,499" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="526,491" sap2010:WorkflowViewState.IdRef="Sequence_8">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="492,435" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="10" RetryInterval="00:00:03">
+                <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="492,431" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="10" RetryInterval="00:00:03">
                   <ui:RetryScope.ActivityBody>
                     <ActivityAction>
                       <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,231" sap2010:WorkflowViewState.IdRef="Sequence_11">
@@ -346,7 +346,7 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="Dear Concern,&#xA;Bot failed to insert Collection in local DB" DisplayName="Send SMTP Mail Message" Email="[From_Email]" EnableSSL="True" From="[From_Email]" sap:VirtualizedContainerService.HintSize="416,171" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Name="RPA BOT" Password="[Email_Pas]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[&quot;Collection: Local DB insert Failed Server No:  &quot;+GlobalVariablesNamespace.GlobalVariables.Server_No]" To="[GlobalVariablesNamespace.GlobalVariables.User_Email]">
+                        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="Dear Concern,&#xA;Bot failed to insert Collection in local DB" DisplayName="Send SMTP Mail Message" Email="[From_Email]" EnableSSL="True" From="[From_Email]" sap:VirtualizedContainerService.HintSize="416,171" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Name="RPA BOT" Password="[Email_Pas]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[&quot;Collection: Local DB insert Failed Server No:  &quot;+GlobalVariablesNamespace.GlobalVariables.Server_No]" To="[GlobalVariablesNamespace.GlobalVariables.Developer_Mail]">
                           <ui:SendMail.Files>
                             <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                           </ui:SendMail.Files>
@@ -393,7 +393,7 @@
               </Sequence>
             </TryCatch.Finally>
           </TryCatch>
-          <Throw Exception="[New BusinessRuleException(&quot;Local DB Collection insert failed&quot;)]" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="Throw_1">
+          <Throw Exception="[New BusinessRuleException(&quot;Local DB Collection insert failed&quot;)]" sap:VirtualizedContainerService.HintSize="528,48" sap2010:WorkflowViewState.IdRef="Throw_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -404,7 +404,7 @@
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_15">
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="562,90" sap2010:WorkflowViewState.IdRef="Sequence_15">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>

@@ -31,9 +31,9 @@
       <x:String>System.Dynamic</x:String>
       <x:String>System.Collections.Specialized</x:String>
       <x:String>System.Reflection</x:String>
+      <x:String>System.Numerics</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
-      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -91,13 +91,13 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Group_Selection" sap:VirtualizedContainerService.HintSize="972,2964" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Group_Selection" sap:VirtualizedContainerService.HintSize="972,3150" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:IfElseIfV2 Condition="[GlobalVariablesNamespace.GlobalVariables.FMCGServerGroup.Trim.Contains(GlobalVariablesNamespace.GlobalVariables.PC_HostName.Trim)]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="972,2718" sap2010:WorkflowViewState.IdRef="IfElseIfV2_2">
+    <ui:IfElseIfV2 Condition="[GlobalVariablesNamespace.GlobalVariables.FMCGServerGroup.Trim.Contains(GlobalVariablesNamespace.GlobalVariables.PC_HostName.Trim)]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="972,2904" sap2010:WorkflowViewState.IdRef="IfElseIfV2_2">
       <ui:IfElseIfV2.Else>
         <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="970,174" sap2010:WorkflowViewState.IdRef="Sequence_11">
           <sap:WorkflowViewStateService.ViewState>
@@ -112,15 +112,15 @@
         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
           <ui:IfElseIfBlock BlockType="ElseIf" Condition="[GlobalVariablesNamespace.GlobalVariables.CementServerGroup.Trim.Contains(GlobalVariablesNamespace.GlobalVariables.PC_HostName.Trim)]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_7">
             <ui:IfElseIfBlock.Then>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="970,560" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="970,622" sap2010:WorkflowViewState.IdRef="Sequence_13">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:MultipleAssign sap2010:Annotation.AnnotationText="localdbip&#xA;localdbport&#xA;duplicateport&#xA;Url&#xA;productline&#xA;so&#xA;co&#xA;groupflag" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="936,500" sap2010:WorkflowViewState.IdRef="MultipleAssign_7">
+                <ui:MultipleAssign sap2010:Annotation.AnnotationText="localdbip&#xA;localdbport&#xA;duplicateport&#xA;Url&#xA;productline&#xA;so&#xA;co&#xA;groupflag" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="936,562" sap2010:WorkflowViewState.IdRef="MultipleAssign_7">
                   <ui:MultipleAssign.AssignOperations>
-                    <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                    <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
                       <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_42">
                         <ui:AssignOperation.To>
                           <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.LocalDB_IP]</OutArgument>
@@ -185,6 +185,22 @@
                           <InArgument x:TypeArguments="x:String">CEMENT</InArgument>
                         </ui:AssignOperation.Value>
                       </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_68">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.SO_Mail]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.CredentialJsonobj("CEMENT_SO_MAIL").ToString]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_69">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.CO_Mail]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.CredentialJsonobj("CEMENT_CO_MAIL").ToString]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
                     </scg:List>
                   </ui:MultipleAssign.AssignOperations>
                   <sap:WorkflowViewStateService.ViewState>
@@ -200,15 +216,15 @@
           </ui:IfElseIfBlock>
           <ui:IfElseIfBlock BlockType="ElseIf" Condition="[GlobalVariablesNamespace.GlobalVariables.FeedsServerGroup.Trim.Contains(GlobalVariablesNamespace.GlobalVariables.PC_HostName.Trim)]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_8">
             <ui:IfElseIfBlock.Then>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="970,560" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="970,622" sap2010:WorkflowViewState.IdRef="Sequence_14">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:MultipleAssign sap2010:Annotation.AnnotationText="localdbip&#xA;localdbport&#xA;duplicateport&#xA;Url&#xA;productline&#xA;so&#xA;co&#xA;groupflag" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="936,500" sap2010:WorkflowViewState.IdRef="MultipleAssign_8">
+                <ui:MultipleAssign sap2010:Annotation.AnnotationText="localdbip&#xA;localdbport&#xA;duplicateport&#xA;Url&#xA;productline&#xA;so&#xA;co&#xA;groupflag" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="936,562" sap2010:WorkflowViewState.IdRef="MultipleAssign_8">
                   <ui:MultipleAssign.AssignOperations>
-                    <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                    <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
                       <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_50">
                         <ui:AssignOperation.To>
                           <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.LocalDB_IP]</OutArgument>
@@ -271,6 +287,22 @@
                         </ui:AssignOperation.To>
                         <ui:AssignOperation.Value>
                           <InArgument x:TypeArguments="x:String">FEEDS</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_70">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.SO_Mail]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.CredentialJsonobj("FEEDS_SO_MAIL").ToString]</InArgument>
+                        </ui:AssignOperation.Value>
+                      </ui:AssignOperation>
+                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_71">
+                        <ui:AssignOperation.To>
+                          <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.CO_Mail]</OutArgument>
+                        </ui:AssignOperation.To>
+                        <ui:AssignOperation.Value>
+                          <InArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.CredentialJsonobj("FEEDS_CO_MAIL").ToString]</InArgument>
                         </ui:AssignOperation.Value>
                       </ui:AssignOperation>
                     </scg:List>
@@ -381,15 +413,15 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:IfElseIfV2.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="970,560" sap2010:WorkflowViewState.IdRef="Sequence_10">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="970,622" sap2010:WorkflowViewState.IdRef="Sequence_10">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:MultipleAssign sap2010:Annotation.AnnotationText="localdbip&#xA;localdbport&#xA;duplicateport&#xA;Url&#xA;productline&#xA;so&#xA;co&#xA;groupflag" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="936,500" sap2010:WorkflowViewState.IdRef="MultipleAssign_6">
+          <ui:MultipleAssign sap2010:Annotation.AnnotationText="localdbip&#xA;localdbport&#xA;duplicateport&#xA;Url&#xA;productline&#xA;so&#xA;co&#xA;groupflag" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="936,562" sap2010:WorkflowViewState.IdRef="MultipleAssign_6">
             <ui:MultipleAssign.AssignOperations>
-              <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+              <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_34">
                   <ui:AssignOperation.To>
                     <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.LocalDB_IP]</OutArgument>
@@ -454,6 +486,22 @@
                     <InArgument x:TypeArguments="x:String">FMCG</InArgument>
                   </ui:AssignOperation.Value>
                 </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_66">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.SO_Mail]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.CredentialJsonobj("FMCG_SO_MAIL").ToString]</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_67">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.CO_Mail]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.CredentialJsonobj("FMCG_CO_MAIL").ToString]</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
               </scg:List>
             </ui:MultipleAssign.AssignOperations>
             <sap:WorkflowViewStateService.ViewState>
@@ -467,7 +515,7 @@
         </Sequence>
       </ui:IfElseIfV2.Then>
     </ui:IfElseIfV2>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="972,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;local_db_ip: &quot; +LocalDB_IP+&quot; || port: &quot; +LocalDBPort+&quot; || duplicateport &quot; +DuplicateIP+vbcr+&quot;&#xD;&#xA;Url &quot; +Url+vbcr+&quot;&#xD;&#xA;PL &quot; +Product_Line+&quot; || SO: &quot; +SO+&quot; || CO: &quot; +CO+vbcr+&#xD;&#xA;&quot;PC : &quot; +PC_HostName+&quot; || Serverno : &quot; +Server_No+vbcr+&#xD;&#xA;&quot;Groupflag &quot; +GroupFlag+vbCr+&#xD;&#xA;&quot;Total Loop - &quot;+TotalLoop.ToString.Trim]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="972,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;local_db_ip: &quot; +LocalDB_IP+&quot; || port: &quot; +LocalDBPort+&quot; || duplicateport &quot; +DuplicateIP+vbcr+&quot;&#xA;Url &quot; +Url+vbcr+&quot;&#xA;PL &quot; +Product_Line+&quot; || SO: &quot; +SO+&quot; || CO: &quot; +CO+vbcr+&#xA;&quot;PC : &quot; +PC_HostName+&quot; || Serverno : &quot; +Server_No+vbcr+&#xA;&quot;Groupflag &quot; +GroupFlag+vbCr+&#xA;&quot;Total Loop - &quot;+TotalLoop.ToString.Trim]" />
     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="972,48" sap2010:WorkflowViewState.IdRef="CommentOut_4">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,108" sap2010:WorkflowViewState.IdRef="Sequence_12">

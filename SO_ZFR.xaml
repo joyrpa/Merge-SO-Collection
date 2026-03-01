@@ -91,7 +91,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Discount" sap:VirtualizedContainerService.HintSize="966,2076.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Discount" sap:VirtualizedContainerService.HintSize="707,2016" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Filed_State" />
       <Variable x:TypeArguments="x:Boolean" Name="CnType_Field_Exist" />
@@ -103,7 +103,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" sap:VirtualizedContainerService.HintSize="488,119.33333333333333" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" sap:VirtualizedContainerService.HintSize="488,119" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
       <ui:Click.CursorPosition>
         <ui:CursorPosition Position="Center">
           <ui:CursorPosition.OffsetX>
@@ -131,7 +131,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:Click>
-    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button  Item Conditions'" sap:VirtualizedContainerService.HintSize="488,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
+    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button  Item Conditions'" sap:VirtualizedContainerService.HintSize="488,139" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
       <ui:Click.CursorPosition>
         <ui:CursorPosition Position="Center">
           <ui:CursorPosition.OffsetX>
@@ -159,7 +159,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:Click>
-    <Assign sap:VirtualizedContainerService.HintSize="488,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_6">
+    <Assign sap:VirtualizedContainerService.HintSize="488,175" sap2010:WorkflowViewState.IdRef="Assign_6">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[Counter_Discount_Field]</OutArgument>
       </Assign.To>
@@ -173,7 +173,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <ui:UiElementExists DisplayName="Element Exists 'CTextField  CnTy'" Exists="[CnType_Field_Exist]" sap:VirtualizedContainerService.HintSize="488,139.33333333333334" sap2010:WorkflowViewState.IdRef="UiElementExists_5">
+    <ui:UiElementExists DisplayName="Element Exists 'CTextField  CnTy'" Exists="[CnType_Field_Exist]" sap:VirtualizedContainerService.HintSize="488,139" sap2010:WorkflowViewState.IdRef="UiElementExists_5">
       <ui:UiElementExists.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d1b2d849-739e-43d4-8ddc-5dd217aeccc6" InformativeScreenshot="fdc8f4de36f6878f1a252011ae3a740a" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create *' /&gt;&lt;sap colTooltip='Condition Type' id='usr/tabsTAXI_TABSTRIP_ITEM/tabpT\05/ssubSUBSCREEN_BODY:SAPLV69A:6201/tblSAPLV69ATCTRL_KONDITIONEN' tableRow='0' /&gt;" WaitForReady="COMPLETE">
           <ui:Target.TimeoutMS>
@@ -188,15 +188,15 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:UiElementExists>
-    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[CnType_Field_Exist=True]" DisplayName="While" sap:VirtualizedContainerService.HintSize="488,1479.3333333333333" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_3">
+    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[CnType_Field_Exist=True]" DisplayName="While" sap:VirtualizedContainerService.HintSize="488,1421" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_3">
       <ui:InterruptibleWhile.Body>
-        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="486,1356.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_16">
+        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="486,1299" sap2010:WorkflowViewState.IdRef="Sequence_16">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="aastate" DisplayName="Get Attribute 'CTextField  CnTy'" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="GetAttribute_4">
+          <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="aastate" DisplayName="Get Attribute 'CTextField  CnTy'" sap:VirtualizedContainerService.HintSize="452,237" sap2010:WorkflowViewState.IdRef="GetAttribute_4">
             <ui:GetAttribute.Result>
               <OutArgument x:TypeArguments="x:String">[Filed_State]</OutArgument>
             </ui:GetAttribute.Result>
@@ -211,15 +211,15 @@
               </ui:Target>
             </ui:GetAttribute.Target>
           </ui:GetAttribute>
-          <If Condition="[Filed_State.ToString.Trim.ToLower.Contains(&quot;editable&quot;) = true]" sap:VirtualizedContainerService.HintSize="452,732" sap2010:WorkflowViewState.IdRef="If_3">
+          <If Condition="[Filed_State.ToString.Trim.ToLower.Contains(&quot;editable&quot;) = true]" sap:VirtualizedContainerService.HintSize="452,697" sap2010:WorkflowViewState.IdRef="If_3">
             <If.Then>
-              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,493.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_17">
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,468" sap2010:WorkflowViewState.IdRef="Sequence_17">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'CTextField  CnTy'" EmptyField="True" sap:VirtualizedContainerService.HintSize="416,175.33333333333334" sap2010:WorkflowViewState.IdRef="TypeInto_7" Text="ZFR[k(enter)]">
+                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'CTextField  CnTy'" EmptyField="True" sap:VirtualizedContainerService.HintSize="416,167" sap2010:WorkflowViewState.IdRef="TypeInto_7" Text="ZFR[k(enter)]">
                   <ui:TypeInto.Target>
                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bd872c8d-d248-4f4b-9b72-07a59e35417b" InformativeScreenshot="5e1d4818c1fb1a9054c3d06db560ba3e" Selector="[string.Format(&quot;&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create *' /&gt;&lt;sap colTooltip='Condition Type' id='usr/tabsTAXI_TABSTRIP_ITEM/tabpT\05/ssubSUBSCREEN_BODY:SAPLV69A:6201/tblSAPLV69ATCTRL_KONDITIONEN' tableRow='{0}' /&gt;&quot;, Counter_Discount_Field)]">
                       <ui:Target.TimeoutMS>
@@ -231,7 +231,7 @@
                     </ui:Target>
                   </ui:TypeInto.Target>
                 </ui:TypeInto>
-                <ucas:ClickToolbarButton ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" AlterIfDisabled="True" DisplayName="Click Toolbar Button 'Button  Back (F3)'" sap:VirtualizedContainerService.HintSize="416,202" sap2010:WorkflowViewState.IdRef="ClickToolbarButton_3" Item="Back   (F3)">
+                <ucas:ClickToolbarButton ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" AlterIfDisabled="True" DisplayName="Click Toolbar Button 'Button  Back (F3)'" sap:VirtualizedContainerService.HintSize="416,193" sap2010:WorkflowViewState.IdRef="ClickToolbarButton_3" Item="Back   (F3)">
                   <ucas:ClickToolbarButton.Items>
                     <scg:List x:TypeArguments="x:String" Capacity="16">
                       <x:String>Enter</x:String>
@@ -257,11 +257,11 @@
                     </ui:Target>
                   </ucas:ClickToolbarButton.Target>
                 </ucas:ClickToolbarButton>
-                <ui:Break sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="Break_2" />
+                <ui:Break sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="Break_2" />
               </Sequence>
             </If.Then>
             <If.Else>
-              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_18">
+              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_18">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -270,7 +270,7 @@
               </Sequence>
             </If.Else>
           </If>
-          <Assign sap:VirtualizedContainerService.HintSize="452,180.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_7">
+          <Assign sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_7">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Int32">[Counter_Discount_Field]</OutArgument>
             </Assign.To>
@@ -278,7 +278,7 @@
               <InArgument x:TypeArguments="x:Int32">[Counter_Discount_Field+1]</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:UiElementExists DisplayName="Element Exists 'CTextField  CnTy'" Exists="[CnType_Field_Exist]" sap:VirtualizedContainerService.HintSize="452,134" sap2010:WorkflowViewState.IdRef="UiElementExists_6">
+          <ui:UiElementExists DisplayName="Element Exists 'CTextField  CnTy'" Exists="[CnType_Field_Exist]" sap:VirtualizedContainerService.HintSize="452,130" sap2010:WorkflowViewState.IdRef="UiElementExists_6">
             <ui:UiElementExists.Target>
               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d1b2d849-739e-43d4-8ddc-5dd217aeccc6" InformativeScreenshot="fdc8f4de36f6878f1a252011ae3a740a" Selector="[string.Format(&quot;&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create*' /&gt;&lt;sap colTooltip='Condition Type' id='usr/tabsTAXI_TABSTRIP_ITEM/tabpT\05/ssubSUBSCREEN_BODY:SAPLV69A:6201/tblSAPLV69ATCTRL_KONDITIONEN' tableRow='{0}' /&gt;&quot;, Counter_Discount_Field)]" WaitForReady="COMPLETE">
                 <ui:Target.TimeoutMS>

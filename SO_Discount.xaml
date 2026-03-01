@@ -32,8 +32,6 @@
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
       <x:String>System.Windows.Markup</x:String>
-      <x:String>GlobalVariablesNamespace</x:String>
-      <x:String>GlobalConstantsNamespace</x:String>
       <x:String>UiPath.UIAutomationCore.Contracts</x:String>
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>System.Reflection</x:String>
@@ -42,6 +40,8 @@
       <x:String>System.Linq.Expressions</x:String>
       <x:String>System.Runtime.Serialization</x:String>
       <x:String>System.Numerics</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -92,7 +92,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Discount" sap:VirtualizedContainerService.HintSize="572,2561.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Discount" sap:VirtualizedContainerService.HintSize="694,2539" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Filed_State" />
       <Variable x:TypeArguments="x:Boolean" Name="CnType_Field_Exist" />
@@ -103,7 +103,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <If Condition="[In_Discount_Value &gt; 0]" sap:VirtualizedContainerService.HintSize="524,2538.6666666666665" sap2010:WorkflowViewState.IdRef="If_2">
+    <If Condition="[In_Discount_Value &gt; 0]" sap:VirtualizedContainerService.HintSize="524,2516" sap2010:WorkflowViewState.IdRef="If_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -111,7 +111,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="522,2313.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_14">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="522,2291" sap2010:WorkflowViewState.IdRef="Sequence_14">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Int32" Name="Counter_Discount_Field" />
           </Sequence.Variables>
@@ -121,7 +121,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" sap:VirtualizedContainerService.HintSize="488,123.33333333333333" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" sap:VirtualizedContainerService.HintSize="488,119" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
             <ui:Click.CursorPosition>
               <ui:CursorPosition Position="Center">
                 <ui:CursorPosition.OffsetX>
@@ -143,7 +143,7 @@
               </ui:Target>
             </ui:Click.Target>
           </ui:Click>
-          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button  Item Conditions'" sap:VirtualizedContainerService.HintSize="488,143.33333333333334" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
+          <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button  Item Conditions'" sap:VirtualizedContainerService.HintSize="488,139" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
             <ui:Click.CursorPosition>
               <ui:CursorPosition Position="Center">
                 <ui:CursorPosition.OffsetX>
@@ -165,7 +165,7 @@
               </ui:Target>
             </ui:Click.Target>
           </ui:Click>
-          <Assign sap:VirtualizedContainerService.HintSize="488,180.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_6">
+          <Assign sap:VirtualizedContainerService.HintSize="488,175" sap2010:WorkflowViewState.IdRef="Assign_6">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Int32">[Counter_Discount_Field]</OutArgument>
             </Assign.To>
@@ -173,7 +173,7 @@
               <InArgument x:TypeArguments="x:Int32">0</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:UiElementExists DisplayName="Element Exists 'CTextField  CnTy'" Exists="[CnType_Field_Exist]" sap:VirtualizedContainerService.HintSize="488,143.33333333333334" sap2010:WorkflowViewState.IdRef="UiElementExists_5">
+          <ui:UiElementExists DisplayName="Element Exists 'CTextField  CnTy'" Exists="[CnType_Field_Exist]" sap:VirtualizedContainerService.HintSize="488,139" sap2010:WorkflowViewState.IdRef="UiElementExists_5">
             <ui:UiElementExists.Target>
               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d1b2d849-739e-43d4-8ddc-5dd217aeccc6" InformativeScreenshot="fdc8f4de36f6878f1a252011ae3a740a" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create *' /&gt;&lt;sap colTooltip='Condition Type' id='usr/tabsTAXI_TABSTRIP_ITEM/tabpT\05/ssubSUBSCREEN_BODY:SAPLV69A:6201/tblSAPLV69ATCTRL_KONDITIONEN' tableRow='0' /&gt;" WaitForReady="COMPLETE">
                 <ui:Target.TimeoutMS>

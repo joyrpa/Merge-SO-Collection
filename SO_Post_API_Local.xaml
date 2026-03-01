@@ -149,7 +149,7 @@
       <AssemblyReference>System.Collections.Specialized</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SO_Post_API_Local" sap:VirtualizedContainerService.HintSize="1054,3579" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SO_Post_API_Local" sap:VirtualizedContainerService.HintSize="694,3551" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="rspns_Status" />
       <Variable x:TypeArguments="x:String" Name="rspns_Result" />
@@ -410,15 +410,15 @@
         </Sequence>
       </If.Else>
     </If>
-    <If Condition="[StopFlag=&quot;True&quot;]" sap:VirtualizedContainerService.HintSize="494,808" sap2010:WorkflowViewState.IdRef="If_5">
+    <If Condition="[StopFlag=&quot;True&quot;]" sap:VirtualizedContainerService.HintSize="494,780" sap2010:WorkflowViewState.IdRef="If_5">
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,588" sap2010:WorkflowViewState.IdRef="Sequence_17">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,560" sap2010:WorkflowViewState.IdRef="Sequence_17">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;SO &quot;+rspns_status.ToString]">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;SO &quot;+rspns_status.ToString]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -426,7 +426,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="528,961" sap2010:WorkflowViewState.IdRef="TryCatch_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -434,13 +434,13 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <TryCatch.Try>
-              <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="526,499" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="526,491" sap2010:WorkflowViewState.IdRef="Sequence_7">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="492,435" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="10" RetryInterval="00:00:03">
+                <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="492,431" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="10" RetryInterval="00:00:03">
                   <ui:RetryScope.ActivityBody>
                     <ActivityAction>
                       <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,231" sap2010:WorkflowViewState.IdRef="Sequence_6">
@@ -449,7 +449,7 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Dear Concern,&#xA;Bot failed to post below mentioned Collection Details - &quot;+&quot;&#xA;Transaction ID - &quot;+InTransactionID+&quot;&#xA;SO No - &quot;+InSONumber]" DisplayName="Send SMTP Mail Message" Email="[From_Email]" EnableSSL="True" From="[From_Email]" sap:VirtualizedContainerService.HintSize="416,171" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Name="RPA BOT" Password="[Email_Pas]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[&quot;SO: Local DB Post Failed - Transaction Id - &quot;+InTransactionID]" To="[GlobalVariablesNamespace.GlobalVariables.User_Email]">
+                        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Dear Concern,&#xA;Bot failed to post below mentioned Collection Details - &quot;+&quot;&#xA;Transaction ID - &quot;+InTransactionID+&quot;&#xA;SO No - &quot;+InSONumber]" DisplayName="Send SMTP Mail Message" Email="[From_Email]" EnableSSL="True" From="[From_Email]" sap:VirtualizedContainerService.HintSize="416,171" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Name="RPA BOT" Password="[Email_Pas]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[&quot;SO: Local DB Post Failed - Transaction Id - &quot;+InTransactionID]" To="[GlobalVariablesNamespace.GlobalVariables.Developer_Mail]">
                           <ui:SendMail.Files>
                             <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                           </ui:SendMail.Files>
@@ -496,7 +496,7 @@
               </Sequence>
             </TryCatch.Finally>
           </TryCatch>
-          <ui:FolderExistsX DisplayName="Folder Exists" Exists="[LocalDBFailPathSts]" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="FolderExistsX_1" Path="[GlobalVariablesNamespace.GlobalVariables.FailedFilePath]">
+          <ui:FolderExistsX DisplayName="Folder Exists" Exists="[LocalDBFailPathSts]" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="FolderExistsX_1" Path="[GlobalVariablesNamespace.GlobalVariables.FailedFilePath]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -504,7 +504,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:FolderExistsX>
-          <If Condition="[LocalDBFailPathSts=False]" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="If_2">
+          <If Condition="[LocalDBFailPathSts=False]" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="If_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -531,7 +531,7 @@
               </Sequence>
             </If.Else>
           </If>
-          <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[GlobalVariablesNamespace.GlobalVariables.FailedFilePath+&quot;\Local Post Fail Data SO.txt&quot;]" sap:VirtualizedContainerService.HintSize="416,171" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[&quot;so_number|||so_note|||cloud_post_status|||entry_date|||entry_time|||status|||do_number|||line_id|||response_message|||Transaction ID&quot; + VbCrLf + InSONumber + &quot;|||&quot; + InSONote + &quot;|||&quot; + InCloudPostStatus + &quot;|||&quot; + InCloudPostingDate + &quot;|||&quot; +InCloudPostingTime + &quot;|||&quot; + InStatus.ToLower() + &quot;|||&quot; + InDoNumber + &quot;|||&quot; + &quot;(&quot;+InLineID+&quot;)&quot; + &quot;|||&quot; + Cloud_Rspns_Msg+&quot;|||&quot;+InTransactionID]">
+          <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[GlobalVariablesNamespace.GlobalVariables.FailedFilePath+&quot;\Local Post Fail Data SO.txt&quot;]" sap:VirtualizedContainerService.HintSize="416,167" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[&quot;so_number|||so_note|||cloud_post_status|||entry_date|||entry_time|||status|||do_number|||line_id|||response_message|||Transaction ID&quot; + VbCrLf + InSONumber + &quot;|||&quot; + InSONote + &quot;|||&quot; + InCloudPostStatus + &quot;|||&quot; + InCloudPostingDate + &quot;|||&quot; +InCloudPostingTime + &quot;|||&quot; + InStatus.ToLower() + &quot;|||&quot; + InDoNumber + &quot;|||&quot; + &quot;(&quot;+InLineID+&quot;)&quot; + &quot;|||&quot; + Cloud_Rspns_Msg+&quot;|||&quot;+InTransactionID]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -539,7 +539,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:WriteTextFile>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;write file executed&quot;]">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;write file executed&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -547,7 +547,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <Throw Exception="[New BusinessRuleException(&quot;Local DB SO post failed&quot;)]" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="Throw_1">
+          <Throw Exception="[New BusinessRuleException(&quot;Local DB SO post failed&quot;)]" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="Throw_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>

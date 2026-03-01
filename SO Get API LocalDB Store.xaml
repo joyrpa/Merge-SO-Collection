@@ -127,14 +127,10 @@
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Get_API_LocalDB_Store" sap:VirtualizedContainerService.HintSize="1039,3043" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Get_API_LocalDB_Store" sap:VirtualizedContainerService.HintSize="694,3043" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="StopFlag" />
-      <Variable x:TypeArguments="x:String" Name="LineID">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">0</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="0" Name="LineID" />
       <Variable x:TypeArguments="x:String" Name="Rspns_msg" />
       <Variable x:TypeArguments="x:Int32" Name="rspns_status" />
       <Variable x:TypeArguments="njl:JObject" Name="Rspns_OBJ" />
@@ -362,7 +358,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:InvokeWorkflowFile>
-          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="528,963" sap2010:WorkflowViewState.IdRef="TryCatch_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -385,7 +381,7 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="Dear Concern,&#xA;Bot failed to insert SO in local DB" DisplayName="Send SMTP Mail Message" Email="[From_Email]" EnableSSL="True" From="[From_Email]" sap:VirtualizedContainerService.HintSize="416,171" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Name="RPA BOT" Password="[Email_Pas]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[&quot;SO: Local DB insert Failed Server No:  &quot;+GlobalVariablesNamespace.GlobalVariables.Server_No]" To="[GlobalVariablesNamespace.GlobalVariables.User_Email]">
+                        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="Dear Concern,&#xA;Bot failed to insert SO in local DB" DisplayName="Send SMTP Mail Message" Email="[From_Email]" EnableSSL="True" From="[From_Email]" sap:VirtualizedContainerService.HintSize="416,171" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Name="RPA BOT" Password="[Email_Pas]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[&quot;SO: Local DB insert Failed Server No:  &quot;+GlobalVariablesNamespace.GlobalVariables.Server_No]" To="[GlobalVariablesNamespace.GlobalVariables.Developer_Mail]">
                           <ui:SendMail.Files>
                             <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                           </ui:SendMail.Files>

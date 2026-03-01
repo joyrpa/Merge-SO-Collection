@@ -132,7 +132,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SO Collection Merge" sap:VirtualizedContainerService.HintSize="702,13214" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SO Collection Merge" sap:VirtualizedContainerService.HintSize="694,13294" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strJson" />
       <Variable x:TypeArguments="njl:JObject" Name="SO_Collection_API_DT" />
@@ -153,7 +153,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="668,13023" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="668,13103" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -161,7 +161,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="SO Collection Main Page" sap:VirtualizedContainerService.HintSize="666,12091" sap2010:WorkflowViewState.IdRef="Sequence_23">
+        <Sequence DisplayName="SO Collection Main Page" sap:VirtualizedContainerService.HintSize="666,12171" sap2010:WorkflowViewState.IdRef="Sequence_23">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="rootFolderPath" />
             <Variable x:TypeArguments="x:String" Name="SAP_Path" />
@@ -388,7 +388,7 @@
                 </scg:List>
               </ui:MultipleAssign.AssignOperations>
             </ui:MultipleAssign>
-            <ui:MultipleAssign sap2010:Annotation.AnnotationText="fromemail, useremail, sotransactioncode, emailpas, collectiontranstioncode, caratematerial, totalloop, serverno, chatid, feedsservergroup, cementservergroup, feedsservergroup, lpgservergroup" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="530,582" sap2010:WorkflowViewState.IdRef="MultipleAssign_6">
+            <ui:MultipleAssign sap2010:Annotation.AnnotationText="fromemail, Developermail, sotransactioncode, emailpas, collectiontranstioncode, caratematerial, totalloop, serverno, chatid, feedsservergroup, cementservergroup, feedsservergroup, lpgservergroup" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="530,582" sap2010:WorkflowViewState.IdRef="MultipleAssign_6">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_22">
@@ -401,10 +401,10 @@
                   </ui:AssignOperation>
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_23">
                     <ui:AssignOperation.To>
-                      <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.User_Email]</OutArgument>
+                      <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.Developer_Mail]</OutArgument>
                     </ui:AssignOperation.To>
                     <ui:AssignOperation.Value>
-                      <InArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.CredentialJsonobj("USER_EMAIL").ToString]</InArgument>
+                      <InArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.CredentialJsonobj("DEVELOPER_MAIL").ToString]</InArgument>
                     </ui:AssignOperation.Value>
                   </ui:AssignOperation>
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_24">
@@ -702,21 +702,21 @@
               <InArgument x:TypeArguments="x:String" x:Key="in_SAP_Path">[SAP_Path.ToString.Trim]</InArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
-          <If Condition="[Not String.IsNullOrEmpty(GlobalVariablesNamespace.GlobalVariables.TotalLoop.ToString)]" sap:VirtualizedContainerService.HintSize="632,5909" sap2010:WorkflowViewState.IdRef="If_17">
+          <If Condition="[Not String.IsNullOrEmpty(GlobalVariablesNamespace.GlobalVariables.TotalLoop.ToString)]" sap:VirtualizedContainerService.HintSize="632,5989" sap2010:WorkflowViewState.IdRef="If_17">
             <If.Then>
-              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="630,5680" sap2010:WorkflowViewState.IdRef="Sequence_81">
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="630,5760" sap2010:WorkflowViewState.IdRef="Sequence_81">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:RepeatNumberOfTimesX DisplayName="Repeat Number of Times" sap:VirtualizedContainerService.HintSize="596,5620" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="[GlobalVariablesNamespace.GlobalVariables.TotalLoop]" StartAt="1">
+                <ui:RepeatNumberOfTimesX DisplayName="Repeat Number of Times" sap:VirtualizedContainerService.HintSize="596,5700" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="[GlobalVariablesNamespace.GlobalVariables.TotalLoop]" StartAt="1">
                   <ui:RepeatNumberOfTimesX.Body>
                     <ActivityAction x:TypeArguments="x:Int32">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItem" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Process" sap:VirtualizedContainerService.HintSize="562,5430" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                      <Sequence DisplayName="Process" sap:VirtualizedContainerService.HintSize="562,5510" sap2010:WorkflowViewState.IdRef="Sequence_11">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:Int32" Name="ElapsedTime" />
                           <Variable x:TypeArguments="x:Int32" Name="Loop_No" />
@@ -845,7 +845,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:CommentOut>
-                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="528,996" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="528,1076" sap2010:WorkflowViewState.IdRef="TryCatch_4">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -853,13 +853,13 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <TryCatch.Try>
-                            <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="526,506" sap2010:WorkflowViewState.IdRef="Sequence_62">
+                            <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="526,586" sap2010:WorkflowViewState.IdRef="Sequence_62">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="492,446" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="20" RetryInterval="00:00:10">
+                              <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="492,526" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="20" RetryInterval="00:00:10">
                                 <ui:RetryScope.ActivityBody>
                                   <ActivityAction>
                                     <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,246" sap2010:WorkflowViewState.IdRef="Sequence_57">
@@ -1485,7 +1485,7 @@
                           <InArgument x:TypeArguments="x:String" x:Key="InMessageBody">["Bot stopped! Please check bot - " + Server_No]</InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
-                      <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Product Line : &quot;+GlobalVariablesNamespace.GlobalVariables.Product_Line +&quot;, Stopped, Please Check&quot;+vbCr+vbCr+&quot;Product Lines &quot;+vbCr+&#xA;&quot;1 - A&quot;+vbCr+&#xA;&quot;2 - B&quot;+vbCr+&#xA;&quot;3 - C&quot;+vbCr+&#xA;&quot;4 - F&quot;+vbCr+&#xA;&quot;5 - G&quot;+vbCr+&#xA;&quot;6 - K&quot;+vbCr+&#xA;&quot;9 - D&quot;]" DisplayName="Send SMTP Mail Message" Email="[GlobalVariablesNamespace.GlobalVariables.From_Email]" EnableSSL="True" From="[GlobalVariablesNamespace.GlobalVariables.From_Email]" sap:VirtualizedContainerService.HintSize="416,171" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Name="RPA BOT" Password="[GlobalVariablesNamespace.GlobalVariables.Email_Pas]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[&quot;SO - Collection BOT Stopped, Server No : &quot;+ GlobalVariablesNamespace.GlobalVariables.Server_No.ToString.Trim]" To="[GlobalVariablesNamespace.GlobalVariables.User_Email]">
+                      <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Product Line : &quot;+GlobalVariablesNamespace.GlobalVariables.Product_Line +&quot;, Stopped, Please Check&quot;+vbCr+vbCr+&quot;Product Lines &quot;+vbCr+&#xA;&quot;1 - A&quot;+vbCr+&#xA;&quot;2 - B&quot;+vbCr+&#xA;&quot;3 - C&quot;+vbCr+&#xA;&quot;4 - F&quot;+vbCr+&#xA;&quot;5 - G&quot;+vbCr+&#xA;&quot;6 - K&quot;+vbCr+&#xA;&quot;9 - D&quot;]" DisplayName="Send SMTP Mail Message" Email="[GlobalVariablesNamespace.GlobalVariables.From_Email]" EnableSSL="True" From="[GlobalVariablesNamespace.GlobalVariables.From_Email]" sap:VirtualizedContainerService.HintSize="416,171" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Name="RPA BOT" Password="[GlobalVariablesNamespace.GlobalVariables.Email_Pas]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="[&quot;SO - Collection BOT Stopped, Server No : &quot;+ GlobalVariablesNamespace.GlobalVariables.Server_No.ToString.Trim]" To="[GlobalVariablesNamespace.GlobalVariables.Developer_Mail]">
                         <ui:SendMail.Files>
                           <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                         </ui:SendMail.Files>
