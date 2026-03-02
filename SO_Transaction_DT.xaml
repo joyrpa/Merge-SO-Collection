@@ -97,7 +97,7 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SO_Transaction_DT" sap:VirtualizedContainerService.HintSize="883,6066" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SO_Transaction_DT" sap:VirtualizedContainerService.HintSize="727,5261" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Double" Name="Discount_Value" />
     </Sequence.Variables>
@@ -106,7 +106,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="626,6043" sap2010:WorkflowViewState.IdRef="Sequence_12">
+    <Sequence sap:VirtualizedContainerService.HintSize="626,5238" sap2010:WorkflowViewState.IdRef="Sequence_12">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Int32" Name="Row_Counter" />
         <Variable x:TypeArguments="x:String" Name="Item_Category" />
@@ -124,13 +124,13 @@
           <InArgument x:TypeArguments="x:Int32">0</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[in_Transaction_DT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="592,5785" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[in_Transaction_DT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="592,4980" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
         <ui:ForEachRow.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="DataRow" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="590,5572" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="590,4807" sap2010:WorkflowViewState.IdRef="Sequence_11">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Int32" Name="Empty_Row_Count" />
               </Sequence.Variables>
@@ -174,13 +174,13 @@
                   </Sequence>
                 </If.Else>
               </If>
-              <ui:CellScope UiElement="{x:Null}" ColumnName="Material" DisplayName="Table Cell Scope 'TableControl  All Items'" sap:VirtualizedContainerService.HintSize="556,3965" sap2010:WorkflowViewState.IdRef="CellScope_1" RowNumber="First Empty Row" TableRow="[Empty_Row_Count]">
+              <ui:CellScope UiElement="{x:Null}" ColumnName="Material" DisplayName="Table Cell Scope 'TableControl  All Items'" sap:VirtualizedContainerService.HintSize="556,3200" sap2010:WorkflowViewState.IdRef="CellScope_1" RowNumber="First Empty Row" TableRow="[Empty_Row_Count]">
                 <ui:CellScope.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="522,3643" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="522,2838" sap2010:WorkflowViewState.IdRef="Sequence_7">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="Get_MAterial" />
                         <Variable x:TypeArguments="x:String" Name="Get_Qty" />
@@ -239,7 +239,7 @@
                           <OutArgument x:TypeArguments="x:String">[Get_Qty]</OutArgument>
                         </ui:GetValue.Value>
                       </ui:GetValue>
-                      <If Condition="[String.IsNullOrEmpty(Get_Qty.ToString.Trim)=False or String.IsNullOrEmpty(Get_MAterial.ToString.Trim)=False]" sap:VirtualizedContainerService.HintSize="488,894" sap2010:WorkflowViewState.IdRef="If_4">
+                      <If Condition="[String.IsNullOrEmpty(Get_Qty.ToString.Trim)=False or String.IsNullOrEmpty(Get_MAterial.ToString.Trim)=False]" sap:VirtualizedContainerService.HintSize="488,862" sap2010:WorkflowViewState.IdRef="If_4">
                         <If.Then>
                           <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,665" sap2010:WorkflowViewState.IdRef="Sequence_13">
                             <sap:WorkflowViewStateService.ViewState>
