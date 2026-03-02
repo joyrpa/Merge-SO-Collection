@@ -149,7 +149,7 @@
       <AssemblyReference>System.Collections.Specialized</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Filter_DataTable" sap:VirtualizedContainerService.HintSize="704,9512" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Filter_DataTable" sap:VirtualizedContainerService.HintSize="1234,16737" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="Filtered_DataTble" />
       <Variable x:TypeArguments="sd:DataTable" Name="Uniqe_Pay_ID_DataTable" />
@@ -192,7 +192,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="704,57" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1234,57" sap2010:WorkflowViewState.IdRef="CommentOut_8">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="502,368" sap2010:WorkflowViewState.IdRef="Sequence_41">
           <sap:WorkflowViewStateService.ViewState>
@@ -226,7 +226,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <Assign sap:VirtualizedContainerService.HintSize="704,175" sap2010:WorkflowViewState.IdRef="Assign_19">
+    <Assign sap:VirtualizedContainerService.HintSize="1234,175" sap2010:WorkflowViewState.IdRef="Assign_19">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[PopUpMessage]</OutArgument>
       </Assign.To>
@@ -234,14 +234,14 @@
         <InArgument x:TypeArguments="x:String">[""]</InArgument>
       </Assign.Value>
     </Assign>
-    <Sequence DisplayName="Collection Filter Datatable" sap:VirtualizedContainerService.HintSize="704,9257" sap2010:WorkflowViewState.IdRef="Sequence_16">
+    <Sequence DisplayName="Collection Filter Datatable" sap:VirtualizedContainerService.HintSize="1234,16482" sap2010:WorkflowViewState.IdRef="Sequence_16">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="670,219" sap2010:WorkflowViewState.IdRef="CommentOut_12">
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1200,219" sap2010:WorkflowViewState.IdRef="CommentOut_12">
         <ui:CommentOut.Body>
           <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="484,108" sap2010:WorkflowViewState.IdRef="Sequence_74">
             <sap:WorkflowViewStateService.ViewState>
@@ -387,8 +387,8 @@
           </Sequence>
         </ui:CommentOut.Body>
       </ui:CommentOut>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="670,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Data Found, Transaction Started&quot;]" />
-      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="670,211" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1200,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Data Found, Transaction Started&quot;]" />
+      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="1200,211" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_17">
@@ -418,8 +418,8 @@
           </scg:List>
         </ui:MultipleAssign.AssignOperations>
       </ui:MultipleAssign>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="670,175" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot; &quot;+vbCr+&quot;Total Register Entry : &quot;+ Transaction_Count.ToString]" />
-      <Assign sap:VirtualizedContainerService.HintSize="670,175" sap2010:WorkflowViewState.IdRef="Assign_5">
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1200,175" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot; &quot;+vbCr+&quot;Total Register Entry : &quot;+ Transaction_Count.ToString]" />
+      <Assign sap:VirtualizedContainerService.HintSize="1200,175" sap2010:WorkflowViewState.IdRef="Assign_5">
         <Assign.To>
           <OutArgument x:TypeArguments="x:Int32">[Transaction_Counter]</OutArgument>
         </Assign.To>
@@ -427,13 +427,13 @@
           <InArgument x:TypeArguments="x:Int32">1</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Uniqe_Receiving_Code_DataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="670,8219" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Uniqe_Receiving_Code_DataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1200,15444" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
         <ui:ForEachRow.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="668,8046" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1198,15271" sap2010:WorkflowViewState.IdRef="Sequence_12">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="FlagLocalDB_CO_Null" />
               </Sequence.Variables>
@@ -442,7 +442,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign sap:VirtualizedContainerService.HintSize="634,175" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign sap:VirtualizedContainerService.HintSize="1164,175" sap2010:WorkflowViewState.IdRef="Assign_4">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[Unique_Receiving_Company_Code]</OutArgument>
                 </Assign.To>
@@ -450,7 +450,7 @@
                   <InArgument x:TypeArguments="x:String">[Row("receiving_company_code").ToString.Trim]</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[Collection_Page_Exist=False]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="634,675" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+              <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[Collection_Page_Exist=False]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1164,675" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
                 <ui:InterruptibleDoWhile.Body>
                   <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,544" sap2010:WorkflowViewState.IdRef="Sequence_31">
                     <sap:WorkflowViewStateService.ViewState>
