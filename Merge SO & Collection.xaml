@@ -132,7 +132,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SO Collection Merge" sap:VirtualizedContainerService.HintSize="694,13351" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SO Collection Merge" sap:VirtualizedContainerService.HintSize="694,13176" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strJson" />
       <Variable x:TypeArguments="njl:JObject" Name="SO_Collection_API_DT" />
@@ -153,7 +153,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="668,13160" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="668,12985" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -161,7 +161,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="SO Collection Main Page" sap:VirtualizedContainerService.HintSize="666,12228" sap2010:WorkflowViewState.IdRef="Sequence_23">
+        <Sequence DisplayName="SO Collection Main Page" sap:VirtualizedContainerService.HintSize="666,12053" sap2010:WorkflowViewState.IdRef="Sequence_23">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="rootFolderPath" />
             <Variable x:TypeArguments="x:String" Name="SAP_Path" />
@@ -172,7 +172,6 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="632,175" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="Info" Message="[&quot;test&quot;]" />
           <Sequence DisplayName="Credential Call" sap:VirtualizedContainerService.HintSize="632,3621" sap2010:WorkflowViewState.IdRef="Sequence_63">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
